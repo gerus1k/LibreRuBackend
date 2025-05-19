@@ -2,8 +2,8 @@
 
 from fastapi import APIRouter, Depends
 from httpx import AsyncClient, HTTPStatusError
-from utils.json_utils import get_headers
-from utils.auth import get_token_from_header
+from api.utils.json_utils import get_headers
+from api.utils.auth import get_token_from_header
 
 router = APIRouter()
 USER_URL = "https://api.libreview.ru/user"

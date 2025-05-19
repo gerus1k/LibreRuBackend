@@ -3,7 +3,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 import httpx
-from utils.json_utils import extract_token, extract_patient_id, get_headers
+from api.utils.json_utils import extract_token, extract_patient_id, get_headers
 
 router = APIRouter()
 

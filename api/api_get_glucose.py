@@ -2,8 +2,8 @@
 
 from fastapi import APIRouter, Depends
 from httpx import HTTPStatusError, AsyncClient
-from utils.json_utils import extract_glucose, get_headers
-from utils.auth import get_token_from_header
+from api.utils.json_utils import extract_glucose, get_headers
+from api.utils.auth import get_token_from_header
 
 router = APIRouter()
 GLUCOSE_URL = "https://api.libreview.ru/llu/connections"

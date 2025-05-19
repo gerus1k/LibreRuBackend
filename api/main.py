@@ -10,7 +10,7 @@ from api.api_get_sensor_info import router as sensor_router
 from api.api_get_graph import router as graph_router
 from api.api_login import router as login_router
 from api.api_get_user import router as user_router
-from utils.auth import get_token_from_header
+from api.utils.auth import get_token_from_header
 
 app = FastAPI()
 

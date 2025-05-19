@@ -4,8 +4,8 @@ from typing import List
 from fastapi import APIRouter, Depends, Query
 from httpx import HTTPStatusError, AsyncClient
 from pydantic import BaseModel
-from utils.json_utils import extract_graph, get_headers
-from utils.auth import get_token_from_header
+from api.utils.json_utils import extract_graph, get_headers
+from api.utils.auth import get_token_from_header
 
 router = APIRouter()
 GRAPH_URL_TEMPLATE = "https://api.libreview.ru/llu/connections/{patientId}/graph"
